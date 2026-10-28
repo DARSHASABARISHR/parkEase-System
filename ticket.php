@@ -55,7 +55,7 @@ require APP_ROOT . '/includes/header.php';
     
     <div class="text-center small mt-3 pt-2 border-top border-secondary">
       <span class="text-secondary">Help & Support / உதவி & விசாரணைக்கு:</span><br>
-      <b class="fs-6">📞 <?= defined('PARKING_HELPLINE') ? e(PARKING_HELPLINE) : '+91 7845156026' ?></b>
+      <b class="fs-6">📞 <?= defined('PARKING_HELPLINE') ? e(PARKING_HELPLINE) : '+91' ?></b> //phone number
     </div>
 
   <?php else: ?>
@@ -66,7 +66,7 @@ require APP_ROOT . '/includes/header.php';
     
     <div class="text-center small mt-3 pt-2 border-top border-secondary">
       <span class="text-secondary">Help & Support / உதவிக்கு:</span><br>
-      <b>📞 <?= defined('PARKING_HELPLINE') ? e(PARKING_HELPLINE) : '+91 7845156026' ?></b>
+      <b>📞 <?= defined('PARKING_HELPLINE') ? e(PARKING_HELPLINE) : '+91' ?></b> // phone number
     </div>
     <p class="small text-secondary mt-2 mb-0 text-center">Thank you for parking with us. / எங்கள் பார்க்கிங் சேவையைப் பயன்படுத்தியதற்கு நன்றி.</p>
   <?php endif; ?>
