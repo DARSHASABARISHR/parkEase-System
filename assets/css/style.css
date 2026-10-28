@@ -1,0 +1,35 @@
+:root, [data-bs-theme=dark] {
+  --pe-bg1:#0c1618; --pe-bg2:#14272b; --pe-glass:rgba(255,255,255,.06); --pe-border:rgba(255,255,255,.12);
+  --pe-accent:#d9a441; --bs-body-bg:transparent; --bs-body-font-family:'Manrope',system-ui,sans-serif;
+}
+[data-bs-theme=light] {
+  --pe-bg1:#eef3f1; --pe-bg2:#dcebe6; --pe-glass:rgba(255,255,255,.65); --pe-border:rgba(20,39,43,.12);
+  --pe-accent:#a8741a; --bs-body-bg:transparent;
+}
+html { min-height:100%; }
+body { min-height:100vh; background:linear-gradient(135deg,var(--pe-bg1),var(--pe-bg2)) fixed; font-family:var(--bs-body-font-family); }
+.glass, .card { background:var(--pe-glass)!important; border:1px solid var(--pe-border)!important; border-radius:16px; backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); }
+.glass-nav { background:var(--pe-glass); border-bottom:1px solid var(--pe-border); backdrop-filter:blur(14px); }
+.brand { font-weight:800; letter-spacing:.3px; color:var(--pe-accent)!important; }
+.nav-link.active { color:var(--pe-accent)!important; font-weight:700; }
+.stat { padding:1.1rem 1.2rem; }
+.stat .v { font-size:1.9rem; font-weight:800; line-height:1.1; }
+.stat .l { opacity:.7; font-size:.85rem; }
+.btn-accent { background:var(--pe-accent); border-color:var(--pe-accent); color:#1b1405; font-weight:700; }
+.btn-accent:hover { filter:brightness(1.1); background:var(--pe-accent); color:#1b1405; }
+.form-control, .form-select { background:var(--pe-glass); border-color:var(--pe-border); }
+.table { --bs-table-bg:transparent; }
+.auth-body { display:flex; align-items:center; justify-content:center; }
+.auth-card { width:min(420px,92vw); padding:2rem; }
+.vnum { text-transform:uppercase; letter-spacing:2px; font-weight:700; }
+.slip { max-width:380px; margin:auto; padding:1.5rem; text-align:center; }
+.slip .row-kv { display:flex; justify-content:space-between; padding:.25rem 0; border-bottom:1px dashed var(--pe-border); text-align:left; }
+.bill-total { font-size:2.2rem; font-weight:800; color:var(--pe-accent); }
+@media print {
+  .no-print { display:none!important; }
+  body { background:#fff!important; color:#000!important; }
+  .slip { border:1px solid #000!important; background:#fff!important; backdrop-filter:none; }
+}
+
+.captcha-img{height:54px;border-radius:8px;cursor:pointer;background:#fff}
+.notice{font-size:.8rem;border:1px dashed var(--pe-border);border-radius:8px;padding:.5rem .7rem;margin-top:1rem;text-align:left}
