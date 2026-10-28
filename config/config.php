@@ -12,8 +12,8 @@ define('DEV_MODE', false);                 // true: show OTP banner when SMTP is
 // Use a Gmail *App Password* (Google Account > Security > 2-Step Verification > App passwords), not your normal password.
 define('SMTP_HOST', 'smtp.gmail.com');
 define('SMTP_PORT', 587);                       // 587 = STARTTLS, 465 = SSL
-define('SMTP_USER', 'rdarshasabarish@gmail.com');
-define('SMTP_PASS', 'yfmz akha jjer nblo');
+define('SMTP_USER', ''); // gmail id
+define('SMTP_PASS', ''); // 16 digit pass key
 define('SMTP_FROM_NAME', 'ParkEase');
 // Secret used to hash OTPs in the database. Put any long random text here.
 define('APP_SECRET', 'f3a9c1e07b4d46b28e5a91d0c7e23f6a8b1d94c5e0a7f2b36d8c4e19a5b7032d');
@@ -22,8 +22,8 @@ define('APP_SECRET', 'f3a9c1e07b4d46b28e5a91d0c7e23f6a8b1d94c5e0a7f2b36d8c4e19a5
 define('FAST2SMS_API_KEY', '');
 // --- Razorpay: RZP_MODE 'test' or 'live'. Keys here are fallbacks; values in system_settings override them. ---
 define('RZP_MODE', 'test');
-define('RZP_TEST_KEY_ID', 'rzp_test_ToXyDJXKuTbsu4');
-define('RZP_TEST_KEY_SECRET', 'xt5wF5Yq6OQl1pwT3lM8UyL6');
+define('RZP_TEST_KEY_ID', 'rzp_test_');
+define('RZP_TEST_KEY_SECRET', '');
 define('RZP_LIVE_KEY_ID', 'rzp_live_XXXXXXXXXXXXXX');
 define('RZP_LIVE_KEY_SECRET', 'XXXXXXXXXXXXXXXXXXXXXXXX');
 
@@ -31,7 +31,7 @@ define('RZP_LIVE_KEY_SECRET', 'XXXXXXXXXXXXXXXXXXXXXXXX');
 define('PARKING_HELPLINE', '+91 7845156026'); // own mobile 
 define('GPAY_QR_PATH', 'assets/img/gpay_qr.jpeg');
 
-define('UPI_ID', 'rdarshasabarish@okicici'); // own upi GPay/PhonePe UPI ID-ஐ இங்கே இடவும் (எ.கா: darsha@okaxis)
+define('UPI_ID', ''); // own upi GPay/PhonePe UPI ID-ஐ இங்கே இடவும் (எ.கா: darsha@okaxis)
 define('UPI_PAYEE_NAME', 'ParkEase');
 
 date_default_timezone_set('Asia/Kolkata');
