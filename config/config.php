@@ -28,7 +28,7 @@ define('RZP_LIVE_KEY_ID', 'rzp_live_XXXXXXXXXXXXXX');
 define('RZP_LIVE_KEY_SECRET', 'XXXXXXXXXXXXXXXXXXXXXXXX');
 
 // --- Helpline & Payment QR ---
-define('PARKING_HELPLINE', '+91 7845156026'); // own mobile 
+define('PARKING_HELPLINE', '+91'); // own mobile 
 define('GPAY_QR_PATH', 'assets/img/gpay_qr.jpeg');
 
 define('UPI_ID', ''); // own upi GPay/PhonePe UPI ID-ஐ இங்கே இடவும் (எ.கா: darsha@okaxis)
